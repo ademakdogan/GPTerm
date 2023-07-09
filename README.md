@@ -10,6 +10,10 @@ This project focuses on converting plain text into shell commands using differen
 The project consists of two main parts. In the first part, users can manually enter and execute shell commands without closing the plugin. The second part involves translating given plain text into shell commands, which are then presented to the user. Users have the flexibility to modify or delete sections of the generated command without execution, if desired. Both sections operate in a similar manner. To indicate the intention of obtaining shell commands from plain text only, users need to prefix the plain text with dot (.). This allows the application to distinguish between manual command entry and obtaining commands from plain text.
 
 
+https://github.com/ademakdogan/GPTerm/assets/53964471/d2334e53-3647-4d62-a83b-6dbc0abdb3aa
+
+
+
 This project tests four models for performance and results. ChatGPT initially shows the best outcomes due to its cost-effective low token count for generating shell commands. Alpaca with 7 billion parameters doesn't perform well, while the MPT model performs better but has occasional incorrect responses. WizardCoder outperforms both Alpaca and MPT, offering acceptable results for open-source model users. However, it is still behind ChatGPT.
 
 It is worth mentioning that while ChatGPT delivers results in a well-organized JSON structure, other open-source models may sometimes provide noisy responses to inquiries. To handle such situations, the [json_extractor](/src/responser.py) function is utilized to eliminate any noise present in the responses of other open-source models..
